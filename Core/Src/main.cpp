@@ -92,9 +92,9 @@ static void MX_SPI1_Init(void);
 static void MX_SPI3_Init(void);
 static void MX_UART4_Init(void);
 /* USER CODE BEGIN PFP */
-void CPU_CACHE_Enable(void);
-void loop(void);
-void setup(void);
+extern "C" void CPU_CACHE_Enable(void);
+extern "C" void loop(void);
+extern "C" void setup(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/

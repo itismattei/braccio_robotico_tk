@@ -8,6 +8,10 @@
 #ifndef SERVOMOTORERC_H_
 #define SERVOMOTORERC_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_hal_tim.h"
 #include <stdint.h>
@@ -51,5 +55,9 @@ typedef struct _servoRc{
 void setRC(servoRC * RCptr, TIM_HandleTypeDef *datiPWM, int numCH, tipoMotore tipo);
 void initRC(servoRC * RCptr);
 void goRC(servoRC * RCptr);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* SERVOMOTORERC_H_ */
